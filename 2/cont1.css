@@ -20,4 +20,36 @@
     background-color: sandybrown; border-radius: 10px; margin: 5px 5px 5px 5px;}
     .pravoe {background-color: royalblue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 200px; width: 320px; border-radius: 10px; margin: 5px 5px 5px 5px; font-size: 10px;}
-    .levoe {}
+.levoe {
+    background-color: rgb(108, 184, 38); 
+    height: 200px; 
+    width: 320px; 
+    border-radius: 10px;
+    margin: 5px 5px 5px 5px;
+    position: relative;
+}
+.mover {
+    width: 30px; 
+    height: 30px;
+    background: red;
+    position: absolute;
+    animation: rolling 2s ease-in 1s infinite;
+}
+@keyframes rolling{
+    25%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 0;
+        right: 0;
+    }
+    75%{
+        bottom: 0;
+        right: 0;
+    }
+    100%{
+        bottom: 0;
+        left:0;
+    }
+}
