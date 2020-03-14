@@ -1,25 +1,84 @@
 .vse {display: flex;}
-.stolbetz {display: table-column; width: 250px; height: 700px;}
-    .zagolovok {color: rgb(182, 126, 126); background-color: rgb(144, 197, 64); 
-    font-family: Arial, Helvetica, sans-serif; height: 80px; border-radius: 10px; text-align: center; 
-    line-height: 80px;}
-    .napolnenie {background-color: royalblue; font-family: Arial, Helvetica, sans-serif;
-    border-radius: 10px; height: 350px; margin: 5px 0px 5px 0px; text-align: center; 
-    line-height: 30px;} 
-    .niz {position: relative; background-color: rgb(144, 197, 64); height: 60px; border-radius: 10px; 
+.stolbetz {
+    display: table-column; 
+    width: 250px; 
+    height: 700px;
+    }
+    .zagolovok {
+    color: rgb(182, 126, 126); 
+    background-color: rgb(144, 197, 64); 
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 80px; 
+    border-radius: 10px; 
+    text-align: center; 
+    line-height: 80px;
+    }
+    .napolnenie {
+    background-color: royalblue; 
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px; 
+    height: 350px; 
+    margin: 5px 0px 5px 0px; 
+    text-align: center; 
+    line-height: 30px;
+    } 
+    .niz {
+    position: relative; 
+    background-color: rgb(144, 197, 64); 
+    height: 60px; 
+    border-radius: 10px; 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;}
-.osnovnoe {display: flex; flex-direction: column;}
-    .verhnee_pole {display: flex; justify-content: space-around; width: 800px; height: 250px; position: relative; 
-    background-color: sandybrown; border-radius: 10px; margin: 0px 5px 0px 5px;}
-    .pravaya {background-color: royalblue; font-family: Arial, Helvetica, sans-serif; height: 240px; 
-    width: 380px; border-radius: 10px; position: right; margin: 5px 0px 5px 5px;}
-    .levaya {background-color: royalblue; font-family: Arial, Helvetica, sans-serif; height: 240px;
-    width: 380px; border-radius: 10px; margin: 5px 5px 5px 5px;}
-    .nizhnee_pole {display: flex; justify-content: space-between; width: 800px; height: 250px; 
-    background-color: sandybrown; border-radius: 10px; margin: 5px 5px 5px 5px;}
-    .pravoe {background-color: royalblue; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 200px; width: 320px; border-radius: 10px; margin: 5px 5px 5px 5px; font-size: 10px;}
+    text-align: center;
+}
+.osnovnoe {
+    display: flex; 
+    flex-direction: column;
+}
+    .verhnee_pole {
+    display: flex; 
+    justify-content: space-around; 
+    width: 800px; 
+    height: 250px; 
+    position: relative; 
+    background-color: sandybrown; 
+    border-radius: 10px; 
+    margin: 0px 5px 0px 5px;
+    }
+    .pravaya {
+    background-color: royalblue; 
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 240px; 
+    width: 380px; 
+    border-radius: 10px; 
+    position: right; 
+    margin: 5px 0px 5px 5px;
+    }
+    .levaya {
+    background-color: royalblue; 
+    font-family: Arial, Helvetica, sans-serif; 
+    height: 240px;
+    width: 380px;
+    border-radius: 10px; 
+    margin: 5px 5px 5px 5px;
+    }
+    .nizhnee_pole {
+    display: flex; 
+    justify-content: space-between; 
+    width: 800px; 
+    height: 250px; 
+    background-color: sandybrown; 
+    border-radius: 10px; 
+    margin: 5px 5px 5px 5px;
+    }
+    .pravoe {
+    background-color: royalblue; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 200px; 
+    width: 320px; 
+    border-radius: 10px; 
+    margin: 5px 5px 5px 5px; 
+    font-size: 10px;
+    }
 .levoe {
     background-color: rgb(108, 184, 38); 
     height: 200px; 
@@ -33,23 +92,33 @@
     height: 30px;
     background: red;
     position: absolute;
-    animation: rolling 2s ease-in 1s infinite;
+    animation: rolling 4s ease-in-out 0s infinite;
 }
 @keyframes rolling{
-    25%{
-        top: 0;
-        left: 0;
+    0%{
+        top: 10px;
+        
     }
-    50%{
-        top: 0;
-        right: 0;
+    15%{
+        top: 160px;
+        
+    }
+    30%{
+        left: 0px;
+    }
+    45%{
+        left: 290px;
+    }
+    60%{
+        top: 160px;
     }
     75%{
-        bottom: 0;
-        right: 0;
+        top: 0px;
+    }
+    88%{
+        left: 290px;
     }
     100%{
-        bottom: 0;
-        left:0;
+        left: 0px;
     }
 }
