@@ -1,6 +1,6 @@
 function z(event){
-var c = document.getElementById('taskn');
-var g = document.getElementById('areaRes');
+let c = document.getElementById('taskn');
+let g = document.getElementById('areaRes');
     if (event.keyCode === 13)
     {
         
